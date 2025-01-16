@@ -1,0 +1,88 @@
+
+html, body, #map {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Gaya untuk elemen form di dalam popup */
+.popup {
+  background-color: #f5f5f5; /* Latar belakang abu-abu terang */
+  color: #333; /* Teks abu-abu gelap */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Lebar maksimal untuk responsivitas */
+  margin: 0 auto;
+}
+
+.popup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555; /* Warna teks abu-abu sedang */
+  font-size: 14px;
+}
+
+.popup input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Border abu-abu terang */
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fff; /* Latar belakang putih */
+  color: #333; /* Teks abu-abu gelap */
+}
+
+.popup input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.popup button {
+  background-color: #007bff; /* Warna biru solid */
+  color: #fff; /* Teks putih */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 100%; /* Responsif: lebar tombol 100% */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup button:active {
+  background-color: #004085;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .popup {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .popup label {
+    font-size: 12px;
+  }
+
+  .popup input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .popup button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

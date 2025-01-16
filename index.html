@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using OpenLayers with Skypack</title>
+    <link href="https://cdn.skypack.dev/ol/ol.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+  </head>
+  <body>
+    
+    <div id="map"></div>
+
+    
+<!-- Hahay -->
+    <div id="popupinfo">
+        <div id="popup-content"></div>
+        <button id="popup-closer" onclick="onClosePopupClick()">Close</button>
+      </div>
+      <button id="btn-current-location" onclick="onGetCurrentLocationClick()">Location Saya</button>
+
+    <script type="module" src="./controller/main.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script type="module" src="./controller/popup.js"></script>
+    <script type="module" src="./template/popup.js"></script>
+  </body>
+</html>
