@@ -25,9 +25,13 @@ const map = new Map({
     }),
   ],
   view: new View({
-    center: fromLonLat([107.6191, -6.9175]), 
-    zoom: 12,
+    center: fromLonLat([107.6191, -6.9175]),
+    zoom: 10,
+    minZoom: 18, // Zoom minimum
+    maxZoom: 20, // Zoom maksimum
   }),
+  
+  
 });
 
 function getGeolocationAddress(latitude, longitude) {
